@@ -25,7 +25,7 @@ namespace ASPTraining.Web.Controllers
         {
             ConnectionString();
         
-            return View();
+            return View("LoginPage");
         }
     }
 }

@@ -7,10 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ASPTraining.Web
 {
-    public class LoginPageModel : PageModel
+    public class LoginPageModel : Controller
     {
         public void OnGet()
         {
+        }
+        public ActionResult LoginToSite()
+        {
+            return View("Index");
         }
     }
 }
