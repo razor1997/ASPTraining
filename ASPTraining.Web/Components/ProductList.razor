@@ -15,9 +15,9 @@
                 <small class="test-muted">
                     <button @onclick="(e => SelectProduct(product.Id))"
                             data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                        More info
+                            More info
                     </button>
-                </small>
+                </small> 
             </div>
         </div>
     }
@@ -39,6 +39,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">@selectedProduct.Description</p>
+                            <p class="card-text">@selectedProduct.PurchaseCost</p>
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,6 @@
                         else
                         {
                             <span class="fa-star fa checked" @onclick="(e => SubmitRating(currentStar))"></span>
-
                         }
                     }
                 </div>
