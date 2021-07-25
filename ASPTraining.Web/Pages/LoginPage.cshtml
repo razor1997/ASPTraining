@@ -1,14 +1,14 @@
 ﻿@page
 @model ASPTraining.Web.LoginPageModel
 @{
-    ViewBag.Title = "Login";
+    ViewBag.Title = "LoginPage";
 }
 <head>
     <link rel="stylesheet" href="~/css/loginSite.css" />
 </head>
 <body>
-    <div class="login">
-        <div class="heading">
+    <div class="container">
+        <div class="align-items-center">
             <h2>Sign in</h2>
             <form action="#">
 
@@ -21,8 +21,9 @@
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                     <input type="password" class="form-control" placeholder="Password">
                 </div>
+                <a href="/Index" class="Button">Text</a>
 
-                <button type="submit" class="badge-dark" asp-area="" asp-page="/Index">Login </button>
+                <button type="button" class="align-content-between" asp-area="" asp-page="/Index">Login </button>
             </form>
         </div>
     </div>
